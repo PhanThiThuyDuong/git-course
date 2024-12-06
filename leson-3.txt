@@ -1,0 +1,23 @@
+Bài 1: Giải thích các câu lệnh 
+git commit --amend  -> Thay đổi commit
+git commit --amend -m"message" -> Thay đổi commit với lời nhắn (mesage)
+git restore --staged <file> -> Đưa file từ vùng staging về vùng working directory
+git reset HEAD~1 -> Đưa từ vùng reposiory về working dircetory quay lại 1 commit
+Bài 2: Mô tả từng bước
+a. Tạo 3 file: file1, file2, file3  -> tạo 3 file có name lần lượt là file1,file2,file3 tại vùng working dircertory
+b. Chạy lệnh: git init -> Khởi tạo repo tại vùng working dircertory
+c. Chạy lệnh: git commit -m"int project" -> commit tạo project (tạo project ở staging)
+d. Chạy lệnh: git add file1 -> Thêm file1 vào vùng staging
+e. Chạy lệnh git commit -m"add file"  ->commit file1 vào vùng staging
+f. Chạy lệnh: git add . -> Thêm tất cả các file vào vùng staging
+g. Chạy lệnh: git restore --staged file2 -> đưa file2 từ vùng staging về vùng working dircetory
+h. Chạy lệnh: git commit -m"add all files" -> commit all file tạo vùng stagin (gổm file file1 và file3)
+i. Chạy lệnh: git reset Head~1 -> Đưa từ vùng reposiory về working dircetory quay lại 1 commit là quay lại commit file1
+Bài 3: Mô tả từng bước
+a. chạy lệnh: git init -> khởi tạo repo tại vùng working dircertory
+b. Tạo file1.txt , file2.txt , oops/file.txt -> Tạo các file tạo vùng working dircertory : file1.txt , file2.txt , tạo folder oops có chưa file3.txt
+c. Thêm file .gitignore , thêm 2 dòng 
+file1.txt -> không cho git theo dõi file1.txt tại vùng working dircertory
+oops/ -> không cho git theo dõi forder oops/ tại vùng working dircertory
+d. Chạy lệnh git add . -> thêm file2.txt vào vùng staging
+e. Chạy lệnh git commit -m"init project" -> commit tạo repo và file2.txt tại vùng stagin
